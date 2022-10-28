@@ -1,9 +1,15 @@
 version: "3.9"
+net:
+  tls: requireTLS
+      mode: requireTLS
+      certificateKeyFile: /etc/letsencrypt/live/psyche.gg/privkey.pem
+       CAFile: /etc/letsencrypt/live/psyche.gg/fullchain.pem
 services:
   mongo:
     container_name: mongo
     image: mongo:4.2
     # environment:
+    #     hostname: mongo
     #   - MONGO_INITDB_ROOT_USERNAME=root
     #   - MONGO_INITDB_ROOT_PASSWORD=napakaangas
     restart: unless-stopped
