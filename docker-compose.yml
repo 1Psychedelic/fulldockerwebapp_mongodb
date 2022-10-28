@@ -9,9 +9,9 @@ services:
     container_name: mongo
     image: mongo:4.2
     # environment:
-    #     hostname: mongo
-    #   - MONGO_INITDB_ROOT_USERNAME=root
-    #   - MONGO_INITDB_ROOT_PASSWORD=napakaangas
+    #     hostname: psyche.gg
+    #   - MONGO_INITDB_ROOT_USERNAME=psyche
+    #   - MONGO_INITDB_ROOT_PASSWORD=3HlD8n3doRl0yQ2lSpTVQl8Z
     restart: unless-stopped
     volumes:
       - ./data/db:/data/db
